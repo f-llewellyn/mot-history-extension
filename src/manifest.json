@@ -1,0 +1,11 @@
+{
+	"manifest_version": 3,
+	"name": "MOT History Extension",
+	"description": "Find the MOT history for a car, using its registration number",
+	"version": "1.0.0",
+	"icons": { "128": "assets/icon_128.png" },
+	"action": {
+		"default_icon": "assets/icon.png",
+		"default_popup": "popup/index.html"
+	}
+}

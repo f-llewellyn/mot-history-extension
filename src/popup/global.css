@@ -1,0 +1,128 @@
+:root {
+	--dark-400: #222222;
+	--dark-300: #666;
+	--pass: #006435;
+	--fail: #b10e1e;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	color: var(--dark-400);
+}
+
+body {
+	padding: 1rem;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+header {
+	margin-bottom: 40px;
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+label {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+input {
+	display: block;
+	width: 200px;
+	margin: 10px 0;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 5px;
+	border: 2px solid var(--dark-400);
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+input:focus {
+	outline: 2px solid orange;
+}
+
+.btn {
+	border: none;
+	background-color: #00823b;
+	color: white;
+	font-size: 1rem;
+	padding: 0.6rem 1.2rem;
+	cursor: pointer;
+	min-width: 100px;
+}
+
+.btn:hover {
+	background-color: var(--pass);
+}
+
+.car__name {
+	font-size: 1.5rem;
+}
+
+.car__detail {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.test__container {
+	margin: 20px 0;
+}
+
+.details__container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	max-width: 500px;
+	margin-top: 20px;
+	position: relative;
+}
+
+.test__details {
+	display: flex;
+	gap: 15px;
+	margin-left: auto;
+}
+
+.test__detail {
+	margin-bottom: 10px;
+}
+
+.test__heading {
+	color: var(--dark-300);
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+.pass {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--pass);
+	text-transform: uppercase;
+}
+
+.fail {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--fail);
+	text-transform: uppercase;
+}
+
+.issues__list {
+	margin-left: 1rem;
+}
+
+.comment__container {
+	margin-bottom: 10px;
+}
