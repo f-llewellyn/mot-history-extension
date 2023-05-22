@@ -1,17 +1,12 @@
 import { defineConfig } from "vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
-import { chromeExtension } from "vite-plugin-chrome-extension";
+import { crx } from "@crxjs/vite-plugin";
+import manifest from "./src/manifest.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	build: {
-		rollupOptions: {
-			input: "src/manifest.json",
-		},
-	},
-	plugins: [svelte(), chromeExtension()],
+	plugins: [svelte(), crx({ manifest })],
 	server: {
 		port: 3000,
 	},
 });
-

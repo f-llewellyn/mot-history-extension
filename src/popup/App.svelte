@@ -14,7 +14,7 @@
 	const getData = async () => {
 		try {
 			motTests = []
-			const res = await fetch(`https://odd-bull-sandals.cyclic.app/https://beta.check-mot.service.gov.uk/trade/vehicles/mot-tests?registration=${plate}`, {
+			const res = await fetch(`https://odd-bull-sandals.cyclic.app/beta.check-mot.service.gov.uk/trade/vehicles/mot-tests?registration=${plate}`, {
 				method: "GET",
 				headers: {
 					Accept: 'application/json+v6',
